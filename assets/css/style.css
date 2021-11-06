@@ -1,3 +1,4 @@
+/* Override browser default styling for all elements. */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -37,6 +38,7 @@ nav ul {
 }
 
 nav ul li {
+    /* Allow list items to stack side-by-side */
     display: inline-block;
     margin-left: 25px;
 }
@@ -50,6 +52,11 @@ p {
     font-size: 16px;
 }
 
+/**
+ * Image Container
+ * 
+ * Image should be a height of 800px, and the entire width of the viewport, regardless of viewport size.
+ */
 .hero {
     height: 800px;
     width: 100%;
@@ -75,6 +82,7 @@ section {
     margin-left: 20px;
 }
 
+/* Aside should float to the right of the viewport. Articles within the aside should not be adjacent to eachother - should stack. */
 aside {
     margin-right: 20px;
     padding: 20px;
